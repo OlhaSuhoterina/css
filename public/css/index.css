@@ -77,7 +77,7 @@ h1 + p {
   background: #e7dd5c;
  }
  .small-img[alt~="small"]{
-  height: 200px;
+  height: 100px;
  }
  a[rel~="external"]{
   color: #e96f9e;
@@ -103,4 +103,76 @@ h1 + p {
   content: "@@@";
   color: brown;
  }
- /* Css  */
+
+
+ /* Css селектори 4 частина */
+
+ #test:target {
+  color: #e31515;
+ }
+ .link:link{
+  color: #e31515;
+ }
+ .link:hover{
+  color: green;
+ }
+ .card:hover{
+  background: aqua;
+ }
+ .link:active{
+  color: rgb(137, 8, 126);
+ }
+ .card:active{
+  background: blueviolet;
+ }
+ input {
+  background-color: #e7dd5c;
+ }
+ /* input:focus{
+  background-color: blue;
+ } */
+ .card:focus-within{
+  background: #7ddf57;
+ }
+ .card:lang(en){
+  background: rgb(121, 196, 152);
+ }
+ button{
+  background: #7ddf57;
+ }
+ button:enabled{
+  background: #257605;
+ }
+
+button:disabled{
+  background: #e7dd5c;
+}
+
+.inp:read-write{
+  background: rosybrown;
+}
+.inp:read-only{
+  background: #e31515;
+}
+input[type='checkbox']:checked ~ span{
+  background: #e31515;
+}
+
+.valid:valid {
+  background: #5ce77a;
+}
+.valid:invalid {
+  background: #e31515;
+}
+.valid:optional {
+  background: #b6afed;
+}
+.number:focus {
+  background: grey;
+}
+.number:out-of-range{
+  background: #e31515;
+}
+.number:in-range{
+  background: #5ce77a;
+}
