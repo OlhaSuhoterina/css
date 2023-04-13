@@ -1,0 +1,178 @@
+/* :root {
+  background: pink;
+}
+
+
+html {
+  max-width: 720px;
+  background: blue;
+}
+
+body {
+  background: #fff;
+}
+
+
+*{
+  color: rgb(223, 65, 112);
+}
+
+h1{
+  color: blue;
+}
+.box {
+  background: #9182bb;
+}
+
+#user {
+  color: burlywood;
+}
+
+h2#user, 
+{
+  color: rgb(221, 157, 20);
+}
+
+/* .button {
+  background: red;
+  color: black;
+} */
+
+/* 
+
+footer > button {
+  background: #3c2173;
+  color: #1b92aa;
+
+} */
+/* 
+footer em {
+  color: #13c173;
+}
+h1 + p {
+  background: #cfcbd7;
+}  */
+
+.card-dark {
+  background: rgb(223, 219, 193);
+
+}
+
+/* .item {
+  color: #43c211;
+}
+.item:first-child{
+  color: #bc1e1e;
+} */
+
+.input-dark {
+ background: #7ddf57;
+}
+
+.input-dark[required] {
+  background: #e96f9e;
+ }
+
+ .input-dark[type="number"] {
+  background: #e7dd5c;
+ }
+ .small-img[alt~="small"]{
+  height: 100px;
+ }
+ a[rel~="external"]{
+  color: #e96f9e;
+ }
+ button[class|="btn"] {
+  background: #e96f9e;
+
+ }
+ a[class*="btn"] {
+  background: #e7dd5c;
+ }
+
+ .btn::first-letter {
+  color: rgb(20, 222, 41);
+ }
+
+ .big-text::first-line {
+  color: aqua;
+ }
+
+ .big-text::before,
+  .big-text::after {
+  content: "@@@";
+  color: brown;
+ }
+
+
+ /* Css селектори 4 частина */
+
+ #test:target {
+  color: #e31515;
+ }
+ .link:link{
+  color: #e31515;
+ }
+ .link:hover{
+  color: green;
+ }
+ .card:hover{
+  background: aqua;
+ }
+ .link:active{
+  color: rgb(137, 8, 126);
+ }
+ .card:active{
+  background: blueviolet;
+ }
+ input {
+  background-color: #e7dd5c;
+ }
+ /* input:focus{
+  background-color: blue;
+ } */
+ .card:focus-within{
+  background: #7ddf57;
+ }
+ .card:lang(en){
+  background: rgb(121, 196, 152);
+ }
+ button{
+  background: #7ddf57;
+ }
+ button:enabled{
+  background: #257605;
+ }
+
+button:disabled{
+  background: #e7dd5c;
+}
+
+.inp:read-write{
+  background: rosybrown;
+}
+.inp:read-only{
+  background: #e31515;
+}
+input[type='checkbox']:checked ~ span{
+  background: #e31515;
+}
+
+.valid:valid {
+  background: #5ce77a;
+}
+.valid:invalid {
+  background: #e31515;
+}
+.valid:optional {
+  background: #b6afed;
+}
+.number:focus {
+  background: grey;
+}
+.number:out-of-range{
+  background: #e31515;
+}
+.number:in-range{
+  background: #5ce77a;
+}
