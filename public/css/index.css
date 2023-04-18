@@ -8,8 +8,8 @@
  p:focus,
  p:active, 
  p:hover { 
-    -webkit-text-fill-color: blue;
-    -webkit-text-stroke: 1px red;
+    -webkit-text-fill-color: rgb(0, 255, 64);
+    -webkit-text-stroke: 1px rgb(0, 255, 55);
     direction: rtl;
        
 }
@@ -20,7 +20,29 @@
     -webkit-text-stroke: 1px initial;
     /* writing-mode: vertical-lr; */
     text-align: justify;
-    text-transform:lowercase;
+    text-transform: lowercase;
     letter-spacing: 1em;
-    text-decoration: underline dotted red;
+    text-decoration: underline  rgb(205, 19, 19);
+}
+
+* {
+font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-size: 40px;
+    font-size: x-large;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.test {
+    display: none;
+}
+
+.block{
+    display: block;
+    background: chartreuse;
+    margin: auto;
+    width: fit-content;
 }
