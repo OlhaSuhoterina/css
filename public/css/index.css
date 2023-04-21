@@ -37,7 +37,7 @@ p {
 }
 
 .test {
-    display: none;
+    display: block;
 }
 
 .block{
@@ -45,4 +45,29 @@ p {
     background: chartreuse;
     margin: auto;
     width: fit-content;
+}
+/* .card{
+    border-bottom: 10px dotted red;
+    border-top: 10px solid blue;
+    border-left: medium double orange;
+    border-right: thick solid green;
+    outline: 10px solid gold;
+} */
+.card{
+    border: 5px dotted  red;
+    border-radius: 10% 5% 25% 0%;
+    box-shadow: 10px 5px 10px 5px rosybrown;
+}
+.card:hover{
+    outline: 5px solid darkblue;
+    outline-offset: 2px;
+    cursor: pointer;
+}
+
+p{
+    text-shadow: 10px 2px 2px rosybrown;
+}
+
+.block{
+    line-height: 1.5;
 }
