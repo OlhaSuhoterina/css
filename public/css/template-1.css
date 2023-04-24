@@ -143,3 +143,23 @@ margin-right: 24px;
     padding: 9px;
 
 }
+.plans_card:nth-child(2) > .card{
+    background: red;
+    visibility: hidden;
+}
+
+p{
+    background: gray;
+    max-width: 150px;
+    /* height: 100px; */
+    /* width: min-content; */
+
+    /* overflow: hidden; */
+
+    text-overflow: ellipsis;
+    word-spacing: 10px;
+
+    /* white-space: nowrap; */
+    overflow: auto;
+    resize: both;
+}
