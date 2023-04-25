@@ -179,7 +179,7 @@ router.get('/template-2', function (req, res) {
     layout: `template-2`,
 
     page: {
-      title: 'Example Page',
+      title: 'Template-2 Page',
     },
     header: [
       {
