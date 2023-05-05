@@ -1,0 +1,60 @@
+<div class="page">
+    <div class="page_content">
+
+        <header class="header">
+            <span class="header_logo">B</span>
+            <nav class="header_nav">
+                <div class="header_nav_right">
+                    {{> navTemplate4 list=header }}
+                </div>
+            </nav>
+        </header>
+
+        {{#with main}}
+        <div class="main">
+            <img class="main_image" src="{{image}}" alt="hero image">
+            <div class="main_content">
+                <h1 class="main_title">{{heading}}</h1>
+                <p class="main_text">{{descriotion}}</p>
+                <a class="main_button" href="{{href}}">{{button}}</a>
+            </div>
+
+        </div>
+        {{/with}}
+
+
+        <main class="featured">
+            {{#each featured}}
+            {{>cardFeatured data=this}}
+            {{/each}}
+        </main>
+
+        <div class="actions">
+            {{#each actions}}
+            <div class="actions_form">
+                <h3 class="actions_form_title">{{heading}}</h3>
+                <a class="actions_form_button" href="{{url}}"> {{text}} </a>
+            </div>
+            {{/each}}
+        </div>
+
+
+
+
+        <footer class="footer">
+            <div class="fotter_item">
+                <span class="footer_logo">B</span>
+                <span class="footer_copyright">Copyright 2023-2024</span>
+            </div>
+
+            {{#each footer}}
+            <div class="footer_nav">
+                <span class="footer_title">{{title}}</span>
+                {{> navTemplate4 list=links isVertical=true}}
+            </div>
+            {{/each}}
+        </footer>
+
+
+
+    </div>
