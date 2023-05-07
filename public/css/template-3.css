@@ -1,3 +1,24 @@
+@keyframes fly{
+    from{
+        top: 0;
+        left: 0;
+        background: #5A5A5A;
+    }
+    25%{
+        top: 500px;
+        left: 500px;
+        background: blue;
+    }
+    50%{
+        left: 0;
+        background: red;
+    }
+    to{
+        top: 0;
+        left: 0;
+        background: yellowgreen;
+    }
+}
 :root{
     --space-m: 12px;
     --space-l: 24px;
@@ -282,15 +303,31 @@
 
 .modal{
     position: fixed;
-    top: 24px;
-    left: 24px;
+    top: 100px;
+    left: 100px;
     /* height: 100px; */
-    width: 600px;
+    width: 400px;
     color: #FFFFFF;
     background: #6C757D;
     border-radius: 12px;
     padding: 24px;
     z-index: 2;
+
+   /* transition-property: top;
+    transition-duration: 5s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    transition-delay: 3s;  */
+}
+body:hover .modal{
+    /* top: 300px; */
+    animation-name: fly;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.87, 0.07, 0.92, 0.16);
+
+    animation-direction: reverse;
+
+    animation-fill-mode: forwards;
 }
 
 .modal_image{
