@@ -56,12 +56,14 @@
 .header{
     padding: var(--space-l) 0;
     display: flex;
+    border-bottom: 1px solid var(--color-border);
     
     justify-content: space-between;
-    position: fixed;
-    width: 960px;
+    position: sticky;
+    width: 100%;
+    max-width: 960px;
     top: 0;
-    left: calc(50% - 960/2);
+    /* left: calc(50% - 1200/2); */
     background-color: #FFFFFF;
 
     z-index: 1;
