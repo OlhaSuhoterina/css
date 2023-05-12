@@ -1,0 +1,13 @@
+{{#each articles}}
+<div class="aticlers_blok_info">
+    <div class="aticlers_img">
+        <img src="{{photo}}">
+        {{#if isNew}}
+        <span class="aticlers_img_badge">NEW</span>
+        {{/if}}
+    </div>
+    <strong class="aticlers_blok_name">{{name}}</strong>
+    <p class="aticlers_blok_descr">{{description}}</p>
+    <a href="#" class="aticlers_blok_button">Read All</a>
+</div>
+{{/each}}
