@@ -1,0 +1,104 @@
+<div class="page">
+    <div class="page_content">
+
+        <header class="header">
+            <span class="header_logo">B</span>
+            <nav class="header_nav">
+                <div class="header_nav_right">
+                    {{> navTemplate4 list=header }}
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            {{#with info}}
+            <div class="main_info">
+                <h2 class="main_into_title">{{title}}</h2>
+                <p class="main_into_descr">{{description}}</p>
+            </div>
+            {{/with}}
+
+            {{#with form}}
+            <form class="form">
+                <h2 class="form_title">{{title}}</h2>
+                <div class="form_input_list">
+                    {{#each inputs}}
+                    <input type="{{type}}" placeholder="{{placeholder}}" name="{{name}}" class="form_input">
+                    {{/each}}
+                </div>
+                <div class="form_checkbox_blok">
+                    <input type="checkbox" name="{{checkbox.name}}">
+                    <label>{{checkbox.label}}</label>
+                </div>
+                <button type="submit" class="form_button">{{button}}</button>
+                <p class="form_info">{{info}}</p>
+            </form>
+            {{/with}}
+        </main>
+        {{#with updates}}
+        <div class="updates">
+            <h3 class="updates_title">{{title}}</h3>
+            {{#each list}}
+            <div class="updates_list">
+                <img class="updates_list_img" src="https://picsum.photos/64/64">
+                <div class="updates_list_info">
+                    <strong class="updates_list_nickname">{{nickname}}</strong>
+                    <p class="updates_list_descr">{{description}}</p>
+                </div>
+
+            </div>
+
+            {{/each}}
+            <div class="show_all">
+                <a href="{{show_all.url}}" class="show_all_url">{{show_all.text}}</a>
+            </div>
+        </div>
+        {{/with}}
+
+        {{#with expirience}}
+        <div class="expirience">
+            <h2 class="expirience_title">{{title}}</h2>
+            <span class="expirience_badge">{{badge}}</span>
+
+            <div class="expirience_list">
+                {{#each list}}
+                <div class="expirience_list_info">
+                    <span class="expirience_list_name">{{name}}</span>
+                    <p class="expirience_list_detalis">{{details}}</p>
+                </div>
+                {{/each}}
+            </div>
+
+
+
+
+
+
+        </div>
+        {{/with}}
+
+
+
+
+
+
+
+
+
+        <footer class="footer">
+            <div class="fotter_item">
+                <span class="footer_logo">B</span>
+                <span class="footer_copyright">Copyright 2023-2024</span>
+            </div>
+
+            {{#each footer}}
+            <div class="footer_nav">
+                <span class="footer_title">{{title}}</span>
+                {{> navTemplate4 list=links isVertical=true}}
+            </div>
+            {{/each}}
+        </footer>
+
+
+
+    </div>
