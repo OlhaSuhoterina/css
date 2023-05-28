@@ -29,7 +29,7 @@ body {
  */
 
 main {
-    display: block;
+    /* display: block; */
     -ms-overflow-style: none; /* IE и Edge */
     scrollbar-width: none; /* Firefox */
 }
@@ -76,7 +76,7 @@ pre {
  */
 
 a {
-    background-color: transparent;
+    /* background-color: transparent; */
 }
 
 /**
@@ -383,10 +383,10 @@ input[type="submit"]
     background:none;
 }
 
-input,
-label,
+/* input, */
+/* label, */
 select,
-button,
+/* button, */
 textarea
 {
     margin:0;
@@ -399,7 +399,7 @@ textarea
     line-height:1;
 
     /* Browsers have different default form fonts */
-    font-size:13px;
+    /* font-size:13px; */
 }
 
 /* Remove the stupid outer glow in Webkit */
@@ -516,7 +516,7 @@ acronym,
 address,
 applet,
 article,
-aside,
+/* aside, */
 audio,
 b,
 big,
@@ -560,7 +560,7 @@ legend,
 li,
 mark,
 menu,
-nav,
+/* nav, */
 object,
 ol,
 output,
@@ -591,10 +591,10 @@ u,
 ul,
 var,
 video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
+  /* margin: 0; */
+  /* padding: 0; */
+  /* border: 0; */
+  /* font-size: 100%; */
   
   vertical-align: baseline;
 }
@@ -604,7 +604,7 @@ video {
 }
 
 article,
-aside,
+/* aside, */
 details,
 figcaption,
 figure,
@@ -612,9 +612,9 @@ footer,
 header,
 hgroup,
 menu,
-nav,
+/* nav, */
 section {
-  display: block;
+  /* display: block; */
 }
 
 body {
@@ -731,13 +731,13 @@ textarea {
 }
 
 button,
-input {
+/* input {
   line-height: normal;
   padding: 0;
   border: 0;
   background: 0;
   box-shadow: 0 0 0 transparent;
-}
+} */
 
 button,
 select {
@@ -791,7 +791,7 @@ table {
   border-spacing: 0;
 }
 
-button,
+/* button, */
 html,
 input,
 select,
@@ -907,9 +907,9 @@ input:-ms-input-placeholder {
 }
 
 input {
-  background-color: inherit;
+  /* background-color: inherit;
   background-image: inherit;
-  color: inherit;
+  color: inherit; */
 }
 
 * {
